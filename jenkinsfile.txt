@@ -1,0 +1,11 @@
+node{
+	stage('git'){
+		//Using git 
+		git 'https://github.com/rbclokesh/practice--team.git'
+	}
+	stage('mvn'){
+	//build clean package
+	sh 'mvn clean package'
+	}
+
+}
